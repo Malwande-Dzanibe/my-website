@@ -1,2 +1,2 @@
-# my-website
+# Dzanibe Media
 my personal website
