@@ -66,7 +66,7 @@ button{
     z-index: 100;
 }
 
-#main-head h2{
+.logo{
     font-weight: bolder;
     margin: 0;
     color: rgb(197, 191, 191);
@@ -75,7 +75,7 @@ button{
     position: relative;
 }
 
-#main-head ul{
+.nav-links{
     display: flex;
     margin-left: 20px;
     background-color: var(--background-color);
@@ -85,26 +85,26 @@ button{
     text-align: center;
 }
 
-#main-head li{
+.nav-links li{
     margin: 0 20px;
     list-style: none;
     letter-spacing: 1px;
 }
 
-#main-head a{
+.nav-links a{
     text-decoration: none;
     font-weight: bolder;
     color: var(--text-color);
     transition: var(--transition);
 }
 
-#main-head a:hover{
+.nav-links a:hover{
     background-color: var(--main-color);
     border-radius: 10px;
     color: var(--background-color);
 }
 
-#main-head a:active{
+.nav-links a:active{
     color: var(--second-main-color);
 }
 
@@ -160,14 +160,14 @@ button{
     background-color: var(--background-color);
 }
 
-#about-me .heading{
+.a-m-heading{
     font-size: 2rem;
     text-align: center;
     margin: 50px 0;
     letter-spacing: 3px;
 }
 
-#about-me p{
+.a-m-paragraph{
     font-weight: bold;
     margin: 30px 0;
     line-height: 1.4;
@@ -181,14 +181,14 @@ button{
     background-color: #ccc;
 }
 
-#contacts .heading{
+.c-heading{
     font-size: 2rem;
     text-align: center;
     margin: 50px 0;
     letter-spacing: 3px;
 }
 
-#contacts .card{
+.c-card{
     background-color: rgb(235, 233, 233);
     display: flex;
     justify-content: center;
@@ -200,15 +200,14 @@ button{
     margin: 70px 0;
 }
 
-#contacts p{
+.c-card p{
     font-weight: bold;
     font-size: 0.8rem;
     line-height: 1.2;
     letter-spacing: 1px;
 }
 
-#contacts img{
-    width: 70px;
+.c-image{
     margin-bottom: 20px;
 }
 
@@ -230,7 +229,6 @@ button{
     position: fixed;
     bottom: 50vh;
     left: 5vw;
-    display: none;
 }
 
 .show-top .back-to-top li{
@@ -266,7 +264,7 @@ footer{
     .close-menu span{
         color:var(--text-color) ;
         position: absolute;
-        left: 50vw;
+        left: 55vw;
         top: 15px;
         display: inline-block;
         visibility: hidden;
