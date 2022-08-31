@@ -3,18 +3,20 @@
 const menuBarsButton = document.querySelector(".menu-bars")
 const menuLinks = document.querySelector("ul")
 const top1 = document.querySelector(".top")
+const hero = document.querySelector(".hero")
+const closeMenu = document.querySelector(".close-menu")
+const flexContainer = document.querySelector(".flex-container")
 
-console.log(top1);
+console.log(flexContainer);
 
+closeMenu.addEventListener("click", function(){
+    menuLinks.style.display = "none"
+    flexContainer.classList.remove("ghost-close-menu")
+})
 
 menuBarsButton.addEventListener("click", function(){
-    if(menuLinks.classList.contains("show")){
-        menuLinks.classList.remove("show") 
-        menuBarsButton.classList.remove("close-bars")
-    }else{
-        menuLinks.classList.add("show")
-        menuBarsButton.classList.add("close-bars")
-    }
+    menuLinks.style.display = "block"
+    flexContainer.classList.add("ghost-close-menu")
 })
 
 document.addEventListener("scroll", function(){
