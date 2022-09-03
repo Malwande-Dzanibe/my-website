@@ -173,6 +173,25 @@ button{
     word-spacing: 2px;
 }
 
+#projects{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.p-image{
+    height: 100px;
+    width: 200px;
+    margin-top: 10px;
+    box-shadow: var(--border-shadow);
+}
+
+.p-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #contacts{
     width: 100%;
     display: flex;
