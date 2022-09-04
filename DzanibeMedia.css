@@ -184,14 +184,20 @@ button{
     width: 200px;
     margin-top: 10px;
     box-shadow: var(--border-shadow);
-    background-image: url(./images/lwande.jpg);
-    background-size: cover;
-    background-position: center;
-    transition: all 100ms ease-in;
+    transition: all 120ms ease-out;
 }
 
 .p-image:hover{
     transform: scale(1.1);
+}
+
+.p-title{
+    text-decoration: none;
+    color: #333;
+}
+
+.p-title:hover{
+    color: var(--main-color);
 }
 
 .p-card{
