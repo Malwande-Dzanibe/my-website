@@ -185,24 +185,6 @@ button{
     margin-top: 10px;
     box-shadow: var(--border-shadow);
     transition: all 120ms ease-out;
-    background-image: url(./images/Screenshot_20220904-170409_Opera\ Mini.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.p-image2{
-    height: 100px;
-    width: 200px;
-    margin-top: 10px;
-    box-shadow: var(--border-shadow);
-    transition: all 120ms ease-out;
-    background-image: url(./images/01mercepexels-photo-120049.jpeg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.p-image2:hover{
-    transform: scale(1.1);
 }
 
 .p-image:hover{
@@ -213,11 +195,6 @@ button{
     margin-top: 15px;
     text-decoration: none;
     color: #333;
-    transition: all 120ms ease-out;
-}
-
-.p-title:hover{
-    transform: scale(1.1);
 }
 
 .p-title:hover{
