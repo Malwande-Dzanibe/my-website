@@ -184,21 +184,18 @@ button{
     width: 200px;
     margin-top: 10px;
     box-shadow: var(--border-shadow);
-    transition: all 120ms ease-out;
-}
-
-.p-image:hover{
-    transform: scale(1.1);
 }
 
 .p-title{
     margin-top: 15px;
     text-decoration: none;
     color: #333;
+    transition: all 120ms ease-out;
 }
 
 .p-title:hover{
     color: var(--main-color);
+    transform: scale(1.1);
 }
 
 .p-card{
