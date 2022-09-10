@@ -184,6 +184,12 @@ button{
     width: 200px;
     margin-top: 10px;
     box-shadow: var(--border-shadow);
+    transition: all 120ms ease-out;
+    z-index: 100;
+}
+
+.p-image:hover{
+    transform: scale(1.1);
 }
 
 .p-title{
@@ -195,7 +201,6 @@ button{
 
 .p-title:hover{
     color: var(--main-color);
-    transform: scale(1.1);
 }
 
 .p-card{
