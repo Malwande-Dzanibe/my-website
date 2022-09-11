@@ -6,8 +6,7 @@ const top1 = document.querySelector(".top")
 const hero = document.querySelector(".hero")
 const closeMenu = document.querySelector(".close-menu")
 const flexContainer = document.querySelector(".flex-container")
-
-console.log(flexContainer);
+const projectsSection = document.querySelector(".p-card")
 
 closeMenu.addEventListener("click", function(){
     menuLinks.style.display = "none"
@@ -26,3 +25,31 @@ document.addEventListener("scroll", function(){
         top1.classList.remove("show-top")
     }
 })
+
+const projects = [
+    {
+        id : 01,
+        projectLink : "https://malwande-dzanibe.github.io/questions",
+        projectTittle : "My questions project",
+        prjectImage : "./images/Screenshot_20220904-170409_Opera Mini.jpg"
+    },
+    {
+        id : 02,
+        projectLink : "https://malwande-dzanibe.github.io/cars",
+        projectTittle : "My favorite cars project",
+        prjectImage : "./images/01mercepexels-photo-120049.jpeg"
+    },
+]
+
+window.addEventListener("DOMContentLoaded", function(){
+    showProjects()
+})
+
+function showProjects(){
+    const amaProject = projects.map(function(items){
+        return`<a class="p-title" href=${items.projectLink} target="_blank"><h4>${items.projectTittle}</h4></a>
+        <a class="p-link" href=${items.projectLink} target="_blank"><img class="p-image" src=${items.prjectImage}></a>`
+    }).join("")
+
+    projectsSection.innerHTML = amaProject
+}
