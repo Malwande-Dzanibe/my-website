@@ -185,7 +185,7 @@ button{
     margin-top: 10px;
     box-shadow: var(--border-shadow);
     transition: all 120ms ease-out;
-    z-index: 100;
+    visibility: visible;
 }
 
 .p-image:hover{
