@@ -31,7 +31,7 @@ const projects = [
         id : 01,
         projectLink : "https://malwande-dzanibe.github.io/questions",
         projectTittle : "My questions project",
-        prjectImage : "./images/Screenshot_20220904-170409_Opera Mini.jpg"
+        prjectImage : "./images/Screenshot (14).jpg"
     },
     {
         id : 02,
@@ -39,7 +39,15 @@ const projects = [
         projectTittle : "My favorite cars project",
         prjectImage : "./images/01mercepexels-photo-120049.jpeg"
     },
+    {
+        id : 03,
+        projectLink : "https://malwande-dzanibe.github.io/kota",
+        projectTittle : "My Kota menu project",
+        prjectImage : "./images/FB_IMG_1663420490758.jpg"
+    },
 ]
+
+
 
 window.addEventListener("DOMContentLoaded", function(){
     showProjects()
@@ -50,6 +58,6 @@ function showProjects(){
         return`<a class="p-title" href=${items.projectLink} target="_blank"><h4>${items.projectTittle}</h4></a>
         <a class="p-link" href=${items.projectLink} target="_blank"><img class="p-image" src=${items.prjectImage}></a>`
     }).join("")
-
+    console.log(amaProject);
     projectsSection.innerHTML = amaProject
 }
