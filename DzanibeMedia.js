@@ -43,7 +43,7 @@ const projects = [
         id : 03,
         projectLink : "https://malwande-dzanibe.github.io/kota",
         projectTittle : "My Kota menu project",
-        prjectImage : "./images/FB_IMG_1663420490758.jpg"
+        prjectImage : "./FB_IMG_1663420490758.jpg"
     },
 ]
 
