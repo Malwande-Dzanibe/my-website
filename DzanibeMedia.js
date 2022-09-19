@@ -30,20 +30,26 @@ const projects = [
     {
         id : 01,
         projectLink : "https://malwande-dzanibe.github.io/questions",
-        projectTittle : "My questions project",
+        projectTittle : "Questions Project",
         prjectImage : "./images/Screenshot (14).jpg"
     },
     {
         id : 02,
         projectLink : "https://malwande-dzanibe.github.io/cars",
-        projectTittle : "My favorite cars project",
+        projectTittle : "Favorite Cars Project",
         prjectImage : "./images/01mercepexels-photo-120049.jpeg"
     },
     {
         id : 03,
         projectLink : "https://malwande-dzanibe.github.io/kota",
-        projectTittle : "My Kota menu project",
+        projectTittle : "Kota Menu Project",
         prjectImage : "./FB_IMG_1663420490758.jpg"
+    },
+    {
+        id : 04,
+        projectLink : "https://malwande-dzanibe.github.io/clock",
+        projectTittle : "Digital Clock Project",
+        prjectImage : "./pexels-aphiwat-chuangchoem-359989.jpg"
     },
 ]
 
