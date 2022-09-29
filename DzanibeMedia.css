@@ -13,6 +13,15 @@
     box-sizing: border-box;
 }
 
+.under{
+    border-top: #5d4954 7px solid;
+    display: flex;
+    width: 56px;
+    margin: 10px auto;
+    border-radius: 5px;
+    height: 5px;
+}
+
 body{
     background-color: var(--background-color);
     font-family: roboto, sans-serif;  
@@ -108,7 +117,7 @@ button{
 }
 
 .hero{  
-    height: 100vh;    
+    height: 80vh;    
     position: relative;
     background-image: url(./1587717449_image_christopher-gower-m_HRfLhgABo-unsplash.jpg);
     background-size: cover;
@@ -148,7 +157,7 @@ button{
 .a-m-heading{
     font-size: 2rem;
     text-align: center;
-    margin: 50px 0;
+    margin-bottom: 50px 0;
     letter-spacing: 3px;
 }
 
@@ -206,8 +215,9 @@ button{
 .c-heading{
     font-size: 2rem;
     text-align: center;
-    margin: 50px 0;
+    margin-bottom: 50px 0;
     letter-spacing: 3px;
+    padding-top: 50px;
 }
 
 .c-card{
