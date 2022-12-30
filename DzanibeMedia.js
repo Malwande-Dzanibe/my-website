@@ -7,6 +7,7 @@ const hero = document.querySelector(".hero")
 const closeMenu = document.querySelector(".close-menu")
 const flexContainer = document.querySelector(".flex-container")
 const projectsSection = document.querySelector(".p-card")
+const about = document.querySelector("#about-me")
 
 closeMenu.addEventListener("click", function(){
     menuLinks.style.display = "none"
@@ -19,7 +20,8 @@ menuBarsButton.addEventListener("click", function(){
 })
 
 document.addEventListener("scroll", function(){
-    if(window.scrollY > 680){
+    const scl = window.scrollY
+    if(scl > about.offsetTop){
         top1.classList.add("show-top")
     }else{
         top1.classList.remove("show-top")

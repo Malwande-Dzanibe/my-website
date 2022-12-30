@@ -229,7 +229,8 @@ button{
     padding: 50px;
     border-radius: 10px;
     box-shadow: var(--border-shadow);
-    margin: 70px 0;
+    margin: 20px 0;
+    border-radius: 50%;
 }
 
 .c-card p{
