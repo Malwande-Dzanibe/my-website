@@ -66,6 +66,5 @@ function showProjects(){
         return`<a class="p-title" href=${items.projectLink} target="_blank"><h4>${items.projectTittle}</h4></a>
         <a class="p-link" href=${items.projectLink} target="_blank"><img class="p-image" src=${items.prjectImage}></a>`
     }).join("")
-    console.log(amaProject);
     projectsSection.innerHTML = amaProject
 }

@@ -199,6 +199,12 @@ button{
     color: var(--main-color);
 }
 
+.projects-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .p-card{
     display: flex;
     flex-direction: column;
@@ -220,16 +226,23 @@ button{
     padding-top: 50px;
 }
 
+.cards-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .c-card{
     background-color: rgb(235, 233, 233);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px;
+    width: 250px;
+    height: 200px;
     border-radius: 10px;
     box-shadow: var(--border-shadow);
-    margin: 20px 0;
+    margin: 20px;
     border-radius: 50%;
 }
 
