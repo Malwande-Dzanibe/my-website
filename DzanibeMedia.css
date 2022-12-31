@@ -25,6 +25,15 @@
 body{
     background-color: var(--background-color);
     font-family: roboto, sans-serif;  
+    width: 100%;
+}
+
+.logo-wrapper{
+    transform: rotate(-4deg);
+    background-color: rgb(37, 35, 35);
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 0 3px 5px rgba(10, 10, 10, 0.5);
 }
 
 span{
@@ -79,8 +88,9 @@ button{
     margin: 0;
     color: rgb(197, 191, 191);
     text-shadow: var(--border-shadow);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     position: relative;
+    font-size: 14px ;
 }
 
 .nav-links{
@@ -209,6 +219,12 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 250px;
+    height: 200px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px ;
 }
 
 #contacts{
@@ -303,7 +319,8 @@ footer{
         height: 100vh;
         background-color: var(--main-color);
         border-radius: 0;
-        transition: var(--transition);
+        transition: opacity 300ms ease;
+        opacity: 3.;
         display: none;
     }
 
@@ -331,6 +348,7 @@ footer{
     }
 
     #main-head .show{
+        opacity: 1;
         transform: translateX(0);
     }
 
