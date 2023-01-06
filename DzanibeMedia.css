@@ -34,6 +34,9 @@ body{
     padding: 8px;
     border-radius: 15px;
     box-shadow: 0 3px 5px rgba(10, 10, 10, 0.5);
+    position: absolute;
+    left: 30px;
+    top: 10px;
 }
 
 span{
@@ -42,9 +45,6 @@ span{
     font-size: 2.1rem;
 }
 
-.close-menu span{
-    display: none;
-}
 
 .menu-bars span{
     background-color: var(--text-color);
@@ -53,10 +53,25 @@ span{
     display: block;
     margin-bottom: 3px;
     padding-top: 2px;   
+    transition: all .5s ease;
+}
+
+.close.menu-bars span:nth-child(1){
+    transform: rotate(-45deg) translate(-4px, 5px);
+    width: 20px;
+    height: 3px;
+}
+.close.menu-bars span:nth-child(2){
+    opacity: 0;
+}
+.close.menu-bars span:nth-child(3){
+    transform: rotate(45deg)  translate(-4px, -5px);
+    width: 20px;
+    height: 3px;
 }
 
 .menu-bars{
-    visibility: hidden; 
+    visibility: hidden;
 }
 
 button{
@@ -78,7 +93,8 @@ button{
 #main-head{
     background-color: var(--main-color);
     padding: 20px;
-    min-height: 8vh;
+    height: 8vh;
+    width: 100%;
     position: relative;
     z-index: 100;
 }
@@ -92,6 +108,7 @@ button{
     position: relative;
     font-size: 14px ;
 }
+
 
 .nav-links{
     display: flex;
@@ -309,18 +326,28 @@ footer{
 
 @media(max-width : 768px){
 
-    #main-head ul{
+    .nav-links{
         flex-direction: column;
         position: absolute;
-        padding-top: 90px;
-        top: 0;
+        top: 0vh;
         right: 0;
-        width: 50vw;
+        width: 100%;
         height: 100vh;
-        background-color: var(--main-color);
+        background: linear-gradient(#a98e9d, #321324);
         border-radius: 0;
-        transition: opacity 300ms ease;
-        opacity: 3.;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease;
+        
+    }
+
+    .show.nav-links {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+    }
+
+    .show.profile-pic{
         display: none;
     }
 
@@ -334,43 +361,19 @@ footer{
         z-index: 1;
     }
 
-    .ghost-close-menu .close-menu span{
-        visibility: visible;
-    }
-
-    .close-menu span:hover{
-        background-color: var(--main-color);
-        color: var(--background-color);
-    }
-
-    .close-menu span:active{
-        color: var(--second-main-color);
-    }
-
-    #main-head .show{
-        opacity: 1;
-        transform: translateX(0);
-    }
-
     #main-head li{
-        padding: 20px;
+        margin: 100px 0;
     }
 
     .menu-bars{
         visibility: visible;
-        background-color: var(--main-color);
+        background-color: inherit;
         padding: 4px;
         transition: var(--transition);
         border: none;
+        cursor: pointer;
+        z-index: 2000;
     } 
-
-    .menu-bars:hover{
-        background-color: var(--background-color);
-    } 
-
-    .close-bars:hover{
-        background-color: red;
-    }
 
     .profile-pic{
         position: absolute;

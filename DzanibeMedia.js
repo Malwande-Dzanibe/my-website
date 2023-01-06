@@ -1,22 +1,19 @@
 
 
 const menuBarsButton = document.querySelector(".menu-bars")
-const menuLinks = document.querySelector("ul")
+const menuLinks = document.querySelector(".nav-links")
 const top1 = document.querySelector(".top")
 const hero = document.querySelector(".hero")
 const closeMenu = document.querySelector(".close-menu")
 const flexContainer = document.querySelector(".flex-container")
 const projectsSection = document.querySelector(".p-card")
 const about = document.querySelector("#about-me")
-
-closeMenu.addEventListener("click", function(){
-    menuLinks.style.display = "none"
-    flexContainer.classList.remove("ghost-close-menu")
-})
+const profilePic = document.querySelector(".profile-pic")
 
 menuBarsButton.addEventListener("click", function(){
-    menuLinks.style.display = "block"
-    flexContainer.classList.add("ghost-close-menu")
+    menuBarsButton.classList.toggle("close")
+    menuLinks.classList.toggle("show")
+    profilePic.classList.toggle("show")
 })
 
 document.addEventListener("scroll", function(){
@@ -27,6 +24,7 @@ document.addEventListener("scroll", function(){
         top1.classList.remove("show-top")
     }
 })
+
 
 
 
