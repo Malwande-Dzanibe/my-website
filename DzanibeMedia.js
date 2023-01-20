@@ -28,7 +28,7 @@ document.addEventListener("scroll", function(){
 
 const footerYear = new Date().getFullYear()
 
-footerElement.innerHTML = `Dzanibe Media &copy; ${footerYear},  All Rights Reserved`
+footerElement.innerHTML = `Dzanibe Media &copy; ${footerYear},  All rights reserved`
 
 
 

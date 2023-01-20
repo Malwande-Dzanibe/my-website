@@ -35,8 +35,8 @@ body{
     border-radius: 15px;
     box-shadow: 0 3px 5px rgba(10, 10, 10, 0.5);
     position: absolute;
-    left: 30px;
-    top: 10px;
+    display: flex ;
+    justify-content: center;
 }
 
 span{
@@ -316,7 +316,8 @@ button{
 
 footer{
     background-color: black;
-    color:  rgb(235, 233, 233) ;
+    color: grey ;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -339,6 +340,17 @@ footer{
         visibility: hidden;
         transition: all .5s ease;
         
+    }
+
+    .logo-wrapper{
+        transform: rotate(-4deg);
+        background-color: rgb(37, 35, 35);
+        padding: 8px;
+        border-radius: 15px;
+        box-shadow: 0 3px 5px rgba(10, 10, 10, 0.5);
+        position: absolute;
+        display: flex ;
+        justify-content: center;
     }
 
     .show.nav-links {
