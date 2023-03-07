@@ -332,6 +332,11 @@ button{
     visibility: visible;
 }
 
+i{
+    padding: 15px;
+    color: grey;
+}
+
 footer{
     background-color: black;
     color: grey ;
