@@ -1,6 +1,6 @@
 :root{
     --background-color : rgb(197, 191, 191);
-    --main-color : #5d4954;
+    --main-color : grey;
     --second-main-color : #efe3e9 ;
     --text-color : #333;
     --border-shadow : 0 3px 5px rgba(0, 0, 0, 0.5);
@@ -30,7 +30,7 @@
 }
 
 .under{
-    border-top: #5d4954 7px solid;
+    border-top: grey 7px solid;
     display: flex;
     width: 56px;
     margin: 10px auto;
@@ -182,7 +182,7 @@ button{
     position: absolute;
     width: 400px;
     height: 400px;
-    border: #442e3a solid 3px;
+    border: grey solid 3px;
     z-index: 100;
     border-radius: 100%;
     object-fit: cover;
@@ -357,7 +357,7 @@ footer{
         right: 0;
         width: 100%;
         height: 100vh;
-        background: linear-gradient(#a98e9d, #321324);
+        background: linear-gradient(grey, rgb(152, 147, 147));
         border-radius: 0;
         opacity: 0;
         visibility: hidden;
@@ -414,7 +414,7 @@ footer{
         position: absolute;
         width: 300px;
         height: 300px;
-        border: #442e3a solid 3px;
+        border: grey solid 3px;
         z-index: 100;
         border-radius: 100%;
         object-fit: cover;
