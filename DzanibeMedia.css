@@ -217,7 +217,6 @@ button{
     min-height: 100vh;
     width: 100%;
     background-color: var(--background-color);
-    padding-top: 30px;
 }
 
 .p-image{
