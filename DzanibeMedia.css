@@ -346,6 +346,12 @@ footer{
     align-items: center;
     height: 50vh;
     width: 100%;
+    flex-direction: column;
+    padding-top: 90px;
+}
+
+.social-links i{
+    padding-top: 90px;
 }
 
 @media(max-width : 768px){
