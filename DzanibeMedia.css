@@ -48,6 +48,7 @@ body{
 
 .logo-wrapper{
     transform: rotate(-4deg);
+    padding: 8px;
     background-color: var(--theme-red);
     border-radius: 15px;
     box-shadow: 0 3px 5px rgba(10, 10, 10, 0.5);
@@ -163,7 +164,7 @@ button{
 }
 
 .hero{  
-    height: 80vh;    
+    height: 81vh;    
     position: relative;
     background-image: url(./1587717449_image_christopher-gower-m_HRfLhgABo-unsplash.jpg);
     background-size: cover;
@@ -326,8 +327,8 @@ i{
 }
 
 footer{
-    background-color: black;
-    color: rgb(88, 86, 86);
+    background-color: rgb(15, 15, 15);
+    color: rgb(88, 86, 86) ;
     font-size: 11px;
     display: flex;
     justify-content: center;
@@ -335,11 +336,17 @@ footer{
     height: 50vh;
     width: 100%;
     flex-direction: column;
-    padding-top: 90px;
+    padding-bottom: 20px;
 }
 
 .social-links i{
-    padding-top: 90px;
+    margin: 15px;
+    padding: 0;
+}
+
+.social-links{
+    margin: 0;
+    margin-bottom: 80px;
 }
 
 @media(max-width : 768px){
@@ -372,16 +379,13 @@ footer{
         position: absolute;
         display: flex ;
         justify-content: center;
+        z-index: 200;
     }
 
     .show.nav-links {
         opacity: 1;
         visibility: visible;
         display: block;
-    }
-
-    .show.profile-pic{
-        display: none;
     }
 
     .close-menu span{

@@ -1,5 +1,4 @@
 
-
 const menuBarsButton = document.querySelector(".menu-bars")
 const menuLinks = document.querySelector(".nav-links")
 const top1 = document.querySelector(".top")
@@ -15,7 +14,6 @@ const footerElement = document.querySelector(".footer")
 menuBarsButton.addEventListener("click", function(){
     menuBarsButton.classList.toggle("close")
     menuLinks.classList.toggle("show")
-    profilePic.classList.toggle("show")
 })
 
 document.addEventListener("scroll", function(){
