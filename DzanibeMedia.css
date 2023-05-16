@@ -25,12 +25,12 @@
     letter-spacing: 1px;
 }
 
-.names-wrapper > h6{
-    color: rgb(235, 44, 44);
+.names-wrapper > h5{
+    color: rgb(187, 53, 53);
 }
 
 .under{
-    border-top: grey 7px solid;
+    border-top:  rgb(187, 53, 53) 7px solid;
     display: flex;
     width: 56px;
     margin: 10px auto;
@@ -40,9 +40,10 @@
 }
 
 body{
-    background-color: var(--background-color);
+    background-color: black;
     font-family: roboto, sans-serif;  
     width: 100%;
+    color: rgb(73, 70, 70);
 }
 
 .logo-wrapper{
@@ -57,25 +58,27 @@ body{
 }
 
 span{
-    color: var(--main-color);
+    color:  rgb(187, 53, 53);
     font-weight: bolder;
     font-size: 2.1rem;
 }
 
 
 .menu-bars span{
-    background-color: var(--text-color);
+    background-color:  rgb(187, 53, 53);
     width: 15px;
     height: 3px;
     display: block;
     margin-bottom: 3px;
     padding-top: 2px;   
     transition: all .5s ease;
+    border-radius: 5px;
 }
 
 .close.menu-bars span:nth-child(1){
     transform: rotate(-45deg) translate(-4px, 5px);
     width: 20px;
+    background-color: black;
     height: 3px;
 }
 .close.menu-bars span:nth-child(2){
@@ -84,6 +87,7 @@ span{
 .close.menu-bars span:nth-child(3){
     transform: rotate(45deg)  translate(-4px, -5px);
     width: 20px;
+    background-color: black;
     height: 3px;
 }
 
@@ -108,7 +112,7 @@ button{
 }
 
 #main-head{
-    background-color: var(--main-color);
+    background-color: black;
     padding: 20px;
     height: 8vh;
     width: 100%;
@@ -130,7 +134,7 @@ button{
 .nav-links{
     display: flex;
     margin-left: 20px;
-    background-color: var(--background-color);
+    background-color: black;
     padding: 7px 50px;
     border-radius: 20px;
     box-shadow: var(--border-shadow);
@@ -151,13 +155,13 @@ button{
 }
 
 .nav-links a:hover{
-    background-color: var(--main-color);
+    background-color:  rgb(187, 53, 53);
     border-radius: 10px;
     color: var(--background-color);
 }
 
 .nav-links a:active{
-    color: var(--second-main-color);
+    color:  rgb(187, 53, 53);
 }
 
 .hero{  
@@ -182,7 +186,7 @@ button{
     position: absolute;
     width: 400px;
     height: 400px;
-    border: rgb(88, 86, 86) solid 3px;
+    border:  rgb(187, 53, 53) solid 5px;
     z-index: 100;
     border-radius: 100%;
     object-fit: cover;
@@ -194,7 +198,6 @@ button{
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: var(--background-color);
 }
 
 .a-m-heading{
@@ -215,7 +218,6 @@ button{
 #projects{
     min-height: 100vh;
     width: 100%;
-    background-color: var(--background-color);
     padding-top: 3px;
 }
 
@@ -235,12 +237,12 @@ button{
 .p-title{
     margin-top: 15px;
     text-decoration: none;
-    color: #333;
+    color: black;
     transition: all 120ms ease-out;
 }
 
 .p-title:hover{
-    color: black;
+    color:  rgb(187, 53, 53);
 }
 
 .projects-wrapper{
@@ -255,17 +257,10 @@ button{
     align-items: center;
     width: 250px;
     height: 200px;
-    background-color: grey;
+    background-color: rgb(73, 70, 70);
     margin: 10px;
     border-radius: 20px;
     box-shadow: 0 3px 5px ;
-}
-
-#contacts{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: var(--background-color);
 }
 
 .c-heading{
@@ -362,7 +357,7 @@ footer{
         right: 0;
         width: 100%;
         height: 100vh;
-        background: linear-gradient(grey, rgb(152, 147, 147));
+        background: linear-gradient(  rgb(187, 53, 53),  rgb(218, 49, 49));
         border-radius: 0;
         opacity: 0;
         visibility: hidden;
@@ -419,7 +414,7 @@ footer{
         position: absolute;
         width: 300px;
         height: 300px;
-        border: grey solid 3px;
+        border:  rgb(187, 53, 53)  solid 5px;
         z-index: 100;
         border-radius: 100%;
         object-fit: cover;
