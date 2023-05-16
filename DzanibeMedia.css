@@ -48,7 +48,7 @@ body{
 
 .logo-wrapper{
     transform: rotate(-4deg);
-    background-color: rgb(88, 86, 86);
+    background-color: rgb(187, 53, 53);
     padding: 8px;
     border-radius: 15px;
     box-shadow: 0 3px 5px rgba(10, 10, 10, 0.5);
@@ -241,10 +241,6 @@ button{
     transition: all 120ms ease-out;
 }
 
-.p-title:hover{
-    color:  rgb(187, 53, 53);
-}
-
 .projects-wrapper{
     display: flex;
     justify-content: center;
@@ -257,10 +253,10 @@ button{
     align-items: center;
     width: 250px;
     height: 200px;
-    background-color: rgb(73, 70, 70);
+    background-color: rgb(187, 53, 53);
     margin: 10px;
     border-radius: 20px;
-    box-shadow: 0 3px 5px ;
+    box-shadow: 0 3px 5pxrgb(187, 53, 53) ;
 }
 
 .c-heading{
@@ -307,14 +303,14 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-color);
+    background-color: rgb(187, 53, 53) ;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     text-decoration: none;
     list-style: none;
     font-weight: bolder;
-    color:var(--second-main-color);
+    color:black;
     transition: var(--transition);
     box-shadow: var(--border-shadow);
     position: fixed;
@@ -367,7 +363,7 @@ footer{
 
     .logo-wrapper{
         transform: rotate(-4deg);
-        background-color: rgb(88, 86, 86);
+        background-color: rgb(187, 53, 53);
         padding: 8px;
         border-radius: 15px;
         box-shadow: 0 3px 5px rgba(10, 10, 10, 0.5);
