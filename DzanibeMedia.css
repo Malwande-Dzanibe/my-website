@@ -286,6 +286,24 @@ button{
     border-radius: 50%;
 }
 
+.date{
+    margin-top: 25px;
+    margin-left: 140px;
+    color: rgb(21, 21, 21);
+}
+
+.update{
+    display: flex;
+    justify-content: end;
+}
+
+.coming{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
 .c-card p{
     font-weight: bold;
     font-size: 0.8rem;
@@ -387,6 +405,7 @@ footer{
         visibility: visible;
         display: block;
     }
+
 
     .close-menu span{
         color:var(--text-color) ;
