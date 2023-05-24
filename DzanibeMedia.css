@@ -163,6 +163,11 @@ button{
     color:  var(--theme-red);
 }
 
+.numbers{
+    color: var(--theme-red);
+    margin-bottom: 70px;
+}
+
 .hero{  
     height: 81vh;    
     position: relative;
@@ -363,6 +368,7 @@ footer{
 }
 
 .social-links{
+    margin-top: 20px;
     margin: 0;
     margin-bottom: 80px;
 }
