@@ -13,6 +13,14 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    width: 100%;
+    color: rgb(73, 70, 70);
+}
+
 .names-wrapper{
     display: flex;
     justify-content: center;
@@ -37,13 +45,6 @@
     border-radius: 5px;
     height: 5px;
     padding-bottom: 30px;
-}
-
-body{
-    background-color: black;
-    font-family: roboto, sans-serif;  
-    width: 100%;
-    color: rgb(73, 70, 70);
 }
 
 .logo-wrapper{
@@ -226,16 +227,10 @@ button{
 }
 
 .p-image{
-    height: 100px;
-    width: 200px;
-    margin-top: 10px;
+    height: 150px;
+    width: 300px;
     box-shadow: var(--border-shadow);
     transition: all 120ms ease-out;
-    visibility: visible;
-}
-
-.p-image:hover{
-    transform: scale(1.1);
 }
 
 .p-title{
@@ -255,11 +250,9 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
-    height: 200px;
+    width: 300px;
     background-color: var(--theme-red);
     margin: 10px;
-    border-radius: 20px;
     box-shadow: 0 3px 5px var(--theme-red) ;
 }
 
@@ -368,7 +361,6 @@ footer{
 }
 
 .social-links{
-    margin-top: 20px;
     margin: 0;
     margin-bottom: 80px;
 }
