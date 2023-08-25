@@ -18,6 +18,10 @@ menuBarsButton.addEventListener("click", function(){
 
 document.addEventListener("scroll", function(){
     const scl = window.scrollY
+    if(scl > about.offsetTop - 10){
+        menuLinks.classList.remove("show")
+        menuBarsButton.classList.remove("close")
+    }
     if(scl > projects.offsetTop){
         top1.classList.add("show-top")
     }else{
