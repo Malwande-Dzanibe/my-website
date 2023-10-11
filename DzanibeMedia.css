@@ -4,7 +4,7 @@
     --text-color : #333;
     --border-shadow : 0 3px 5px rgba(0, 0, 0, 0.5);
     --transition : all 100ms 100ms linear;
-    --theme-red : rgb(186, 59, 59);
+    --theme-red : #08A3D7;
 }
 
 *{
@@ -19,6 +19,10 @@ body{
     font-weight: bolder;
     width: 100%;
     color: rgb(151, 146, 146);
+}
+
+.loggo{
+    text-decoration: none;
 }
 
 .names-wrapper{
