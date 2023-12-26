@@ -1,10 +1,10 @@
 :root{
     --background-color : rgb(197, 191, 191);
     --second-main-color : #efe3e9 ;
-    --text-color : #333;
+    --text-color : rgb(111, 104, 104);
     --border-shadow : 0 3px 5px rgba(0, 0, 0, 0.5);
     --transition : all 100ms 100ms linear;
-    --theme-red : #099ed0;
+    --theme-red : rgb(32, 39, 46);
 }
 
 *{
@@ -14,11 +14,15 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(32, 39, 46);
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     width: 100%;
     color: rgb(151, 146, 146);
+}
+
+.titles2{
+    color: black;
 }
 
 #contacts{
@@ -85,9 +89,12 @@ span{
     font-size: 2.1rem;
 }
 
+.titles{
+    color: black;
+}
 
 .menu-bars span{
-    background-color:  var(--theme-red);
+    background-color:   rgb(151, 146, 146);
     width: 15px;
     height: 3px;
     display: block;
@@ -95,12 +102,12 @@ span{
     padding-top: 2px;   
     transition: all .5s ease;
     border-radius: 5px;
+    color: rgb(151, 146, 146);
 }
 
 .close.menu-bars span:nth-child(1){
     transform: rotate(-45deg) translate(-4px, 5px);
     width: 20px;
-    background-color: var(--theme-red);
     height: 3px;
 }
 .close.menu-bars span:nth-child(2){
@@ -109,7 +116,7 @@ span{
 .close.menu-bars span:nth-child(3){
     transform: rotate(45deg)  translate(-4px, -5px);
     width: 20px;
-    background-color: var(--theme-red);
+    background-color: rgb(151, 146, 146);
 }
 
 .menu-bars{
@@ -133,7 +140,7 @@ button{
 }
 
 #main-head{
-    background-color: black;
+    background-color: rgb(32, 39, 46);
     padding: 20px;
     height: 8vh;
     width: 100%;
@@ -155,7 +162,7 @@ button{
 .nav-links{
     display: flex;
     margin-left: 20px;
-    background-color: black;
+    background-color:  rgb(32, 39, 46);
     padding: 7px 50px;
     border-radius: 20px;
     box-shadow: var(--border-shadow);
@@ -232,6 +239,7 @@ button{
     margin-bottom: 50px 0;
     letter-spacing: 3px;
     padding-top: 30px;
+
 }
 
 .a-m-paragraph{
@@ -279,7 +287,11 @@ ul{
     width: 300px;
     background-color: var(--theme-red);
     margin: 10px;
-    box-shadow: 0 3px 5px var(--theme-red) ;
+    transition: all ease .3s;
+}
+
+.p-card:hover{
+    transform: scale(1.1,1.1);
 }
 
 .c-heading{
@@ -380,7 +392,7 @@ footer{
         right: 0;
         width: 100%;
         height: 100vh;
-        background: black;
+        background:  rgb(32, 39, 46);
         border-radius: 0;
         opacity: 0;
         visibility: hidden;
@@ -402,7 +414,7 @@ footer{
     }
 
     .nav-links a{
-        color: var(--theme-red);
+        color:rgb(151, 146, 146);
     }
 
     .logo-wrapper{
