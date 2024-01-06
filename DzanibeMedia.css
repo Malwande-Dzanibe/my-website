@@ -333,10 +333,17 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50vh;
+        height: 45vh;
         width: 100%;
         flex-direction: column;
         padding-bottom: 20px;
+        position: relative;
+    }
+
+    .social-links-wrapper{
+        position: absolute;
+        left: 2vw;
+        bottom: 2vh;
     }
 
     #social-links i{
