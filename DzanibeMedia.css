@@ -25,24 +25,6 @@ body{
     color: black;
 }
 
-#contacts{
-    min-height: 100vh;
-    width: 100%;
-}
-
-.contacts-wrapper{
-    margin-left: 100px;
-    margin-top: 250px;
-}
-
-.single-contact{
-    display: flex;
-    align-items: center;
-    height: 20px;
-    width: 100%;
-    margin: 10px 0;
-}
-
 .loggo{
     text-decoration: none;
 }
@@ -63,16 +45,6 @@ body{
     color: var(--theme-red);
 }
 
-.under{
-    border-top:  var(--theme-red) 7px solid;
-    display: flex;
-    width: 56px;
-    margin: 10px auto;
-    border-radius: 5px;
-    height: 5px;
-    padding-bottom: 30px;
-}
-
 .logo-wrapper{
     padding: 8px;
     background-color: var(--theme-red);
@@ -91,36 +63,6 @@ span{
 
 .titles{
     color: black;
-}
-
-.menu-bars span{
-    background-color:   rgb(151, 146, 146);
-    width: 15px;
-    height: 3px;
-    display: block;
-    margin-bottom: 3px;
-    padding-top: 2px;   
-    transition: all .5s ease;
-    border-radius: 5px;
-    color: rgb(151, 146, 146);
-}
-
-.close.menu-bars span:nth-child(1){
-    transform: rotate(-45deg) translate(-4px, 5px);
-    width: 20px;
-    height: 3px;
-}
-.close.menu-bars span:nth-child(2){
-    opacity: 0;
-}
-.close.menu-bars span:nth-child(3){
-    transform: rotate(45deg)  translate(-4px, -5px);
-    width: 20px;
-    background-color: rgb(151, 146, 146);
-}
-
-.menu-bars{
-    visibility: hidden;
 }
 
 button{
@@ -158,45 +100,6 @@ button{
     font-size: 14px ;
 }
 
-
-.nav-links{
-    display: flex;
-    margin-left: 20px;
-    background-color:  rgb(32, 39, 46);
-    padding: 7px 50px;
-    border-radius: 20px;
-    box-shadow: var(--border-shadow);
-    text-align: center;
-}
-
-.nav-links li{
-    margin: 0 20px;
-    list-style: none;
-    letter-spacing: 1px;
-}
-
-.nav-links a{
-    text-decoration: none;
-    font-weight: bolder;
-    color: var(--text-color);
-    transition: var(--transition);
-}
-
-.nav-links a:hover{
-    background-color:  var(--theme-red);
-    border-radius: 10px;
-    color: var(--background-color);
-}
-
-.nav-links a:active{
-    color:  var(--theme-red);
-}
-
-.numbers{
-    color: var(--theme-red);
-    margin-bottom: 70px;
-}
-
 .hero{  
     height: 81vh;    
     position: relative;
@@ -214,18 +117,6 @@ button{
     background-color: black;  
     opacity: .5;
 }
-
-.profile-pic{
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    border:  var(--theme-red) solid 5px;
-    z-index: 100;
-    border-radius: 100%;
-    object-fit: cover;
-    bottom: -80px;
-    left: 70px;
-} 
 
 #about-me{
     width: 100%;
@@ -328,18 +219,6 @@ ul{
     color: rgb(21, 21, 21);
 }
 
-.update{
-    display: flex;
-    justify-content: end;
-}
-
-.coming{
-    display: flex;
-    justify-content: end;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
 .c-card p{
     font-weight: bold;
     font-size: 0.8rem;
@@ -373,32 +252,17 @@ footer{
     padding-bottom: 20px;
 }
 
-.social-links i{
+#social-links i{
     margin: 15px;
     padding: 0;
 }
 
-.social-links{
+#social-links{
     margin: 0;
     margin-bottom: 80px;
 }
 
 @media(max-width : 768px){
-
-    .nav-links{
-        flex-direction: column;
-        position: absolute;
-        top: 0vh;
-        right: 0;
-        width: 100%;
-        height: 100vh;
-        background:  rgb(32, 39, 46);
-        border-radius: 0;
-        opacity: 0;
-        visibility: hidden;
-        transition: all .5s ease;
-        
-    }
 
     .contacts-wrapper{
         margin-left: 30px;
@@ -413,10 +277,6 @@ footer{
         flex-direction: column-reverse;
     }
 
-    .nav-links a{
-        color:rgb(151, 146, 146);
-    }
-
     .logo-wrapper{
         background-color: var(--theme-red);
         padding: 8px;
@@ -428,47 +288,8 @@ footer{
         z-index: 200;
     }
 
-    .show.nav-links {
-        opacity: 1;
-        visibility: visible;
-        display: block;
-    }
-
-
-    .close-menu span{
-        color:var(--text-color) ;
-        position: absolute;
-        left: 55vw;
-        top: 15px;
-        display: inline-block;
-        visibility: hidden;
-        z-index: 1;
-    }
-
     #main-head li{
         margin: 100px 0;
-    }
-
-    .menu-bars{
-        visibility: visible;
-        background-color: inherit;
-        padding: 4px;
-        transition: var(--transition);
-        border: none;
-        cursor: pointer;
-        z-index: 2000;
-    } 
-
-    .profile-pic{
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        border:  var(--theme-red)  solid 5px;
-        z-index: 100;
-        border-radius: 100%;
-        object-fit: cover;
-        bottom: -80px;
-        left: 10px;
     }
 
     .p-card{
@@ -490,12 +311,12 @@ footer{
         padding-bottom: 20px;
     }
 
-    .social-links i{
+    #social-links i{
         margin: 15px;
         padding: 0;
     }
 
-    .social-links{
+    #social-links{
         margin: 0;
         margin-bottom: 80px;
     }
