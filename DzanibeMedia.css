@@ -21,6 +21,13 @@ body{
     color: rgb(151, 146, 146);
 }
 
+.contact{
+    color:  rgb(45, 58, 72);;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
 .titles2{
     color: black;
 }
@@ -239,35 +246,57 @@ i{
     color: var(--theme-red);
 }
 
+.footer{
+    margin-left: 5px;
+    color: rgb(45, 58, 72);
+}
+
+.to-link{
+    color: rgb(88, 86, 86);
+    text-decoration: none;
+}
+
 footer{
-    background-color: rgb(15, 15, 15);
+    background-color: black;
     color: rgb(88, 86, 86) ;
     font-size: 11px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 45vh;
     width: 100%;
     flex-direction: column;
     padding-bottom: 20px;
+    position: relative;
+}
+
+.social-links-wrapper{
+    position: absolute;
+    left: 2vw;
+    bottom: 2vh;
 }
 
 #social-links i{
-    margin: 15px;
+    margin: 5px;
     padding: 0;
+    margin-right: 10px;
+    font-size: 16px;
+    color: rgb(45, 58, 72);;
+}
+
+.one-social{
+    display: flex;
+    align-items: center;
 }
 
 #social-links{
-    margin: 0;
     margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
 }
 
 @media(max-width : 768px){
-
-    .contacts-wrapper{
-        margin-left: 30px;
-        margin-top: 290px;
-    }
 
     .projects-wrapper{
         display: flex;
@@ -299,7 +328,7 @@ footer{
     }
 
     footer{
-        background-color: rgb(15, 15, 15);
+        background-color: black;
         color: rgb(88, 86, 86) ;
         font-size: 11px;
         display: flex;
@@ -312,8 +341,10 @@ footer{
     }
 
     #social-links i{
-        margin: 15px;
+        margin: 5px;
         padding: 0;
+        margin-right: 10px;
+        font-size: 16px;
     }
 
     #social-links{
