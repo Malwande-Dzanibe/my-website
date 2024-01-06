@@ -4,7 +4,7 @@
     --text-color : rgb(111, 104, 104);
     --border-shadow : 0 3px 5px rgba(0, 0, 0, 0.5);
     --transition : all 100ms 100ms linear;
-    --theme-red : rgb(32, 39, 46);
+    --theme-red : rgb(14, 112, 157);
 }
 
 *{
@@ -14,7 +14,7 @@
 }
 
 body{
-    background-color: rgb(32, 39, 46);
+    background-color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     width: 100%;
@@ -22,7 +22,7 @@ body{
 }
 
 .contact{
-    color:  rgb(45, 58, 72);;
+    color:  var(--theme-red);
     font-size: 16px;
     margin-left: 5px;
     margin-bottom: 20px;
@@ -89,7 +89,7 @@ button{
 }
 
 #main-head{
-    background-color: rgb(32, 39, 46);
+    background-color: black;
     padding: 20px;
     height: 8vh;
     width: 100%;
@@ -173,9 +173,7 @@ ul{
 
 .projects-wrapper{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
+    justify-content: flex-start;
 }
 
 .p-card{
@@ -186,6 +184,7 @@ ul{
     background-color: var(--theme-red);
     margin: 10px;
     transition: all ease .3s;
+    box-shadow: 0px 3px 5px var(--theme-red);
 }
 
 .p-card:hover{
@@ -248,7 +247,7 @@ i{
 
 .footer{
     margin-left: 5px;
-    color: rgb(45, 58, 72);
+    color:var(--theme-red);
 }
 
 .to-link{
@@ -257,7 +256,7 @@ i{
 }
 
 footer{
-    background-color: black;
+    background-color: rgb(13, 13, 13);
     color: rgb(88, 86, 86) ;
     font-size: 11px;
     display: flex;
@@ -281,7 +280,7 @@ footer{
     padding: 0;
     margin-right: 10px;
     font-size: 16px;
-    color: rgb(45, 58, 72);;
+    color: var(--theme-red);
 }
 
 .one-social{
@@ -328,7 +327,7 @@ footer{
     }
 
     footer{
-        background-color: black;
+        background-color: rgb(13, 13, 13);
         color: rgb(88, 86, 86) ;
         font-size: 11px;
         display: flex;
