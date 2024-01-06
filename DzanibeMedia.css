@@ -262,7 +262,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45vh;
+    height: 48vh;
     width: 100%;
     flex-direction: column;
     padding-bottom: 20px;
@@ -333,7 +333,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 45vh;
+        height: 48vh;
         width: 100%;
         flex-direction: column;
         padding-bottom: 20px;
@@ -342,7 +342,8 @@ footer{
 
     .social-links-wrapper{
         position: absolute;
-        left: 2vw;
+        top: 2vh;
+        left: 3vw;
         bottom: 2vh;
     }
 
