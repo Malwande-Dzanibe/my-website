@@ -3,7 +3,7 @@
     --second-main-color : #efe3e9 ;
     --text-color : rgb(111, 104, 104);
     --border-shadow : 0 3px 5px rgba(0, 0, 0, 0.5);
-    --transition : all 100ms 100ms linear;
+    --transition : all .3s ease;
     --theme-red : rgb(14, 112, 157);
 }
 
@@ -28,10 +28,6 @@ body{
     margin-bottom: 20px;
 }
 
-.titles2{
-    color: black;
-}
-
 .loggo{
     text-decoration: none;
 }
@@ -52,12 +48,15 @@ body{
     color: var(--theme-red);
 }
 
+.logo{
+    font-size: 12px;
+}
+
 .logo-wrapper{
-    padding: 8px;
-    background-color: var(--theme-red);
+    padding: 6px;
+    background-color: green;
     border-radius: 15px;
     box-shadow: 0 3px 5px rgba(10, 10, 10, 0.5);
-    position: absolute;
     display: flex ;
     justify-content: center;
 }
@@ -69,11 +68,43 @@ span{
 }
 
 .titles{
-    color: black;
+    color: var(--theme-red);
 }
 
-button{
-    visibility: hidden;
+.code{
+    color: gray;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    margin-bottom: 7px;
+    background-color: black;
+    color: var(--theme-red);
+    border: 2px rgb(58, 57, 57) solid;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.code:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.project-buttons{
+    display: flex;
+    width: 100%;
+    margin-top: 3px;
+    justify-content: flex-end;
+    margin-left: 30px;
+}
+
+.under{
+    width: 50px;
+    height: 3px;
+    background-color: var(--theme-red);
+    margin: 0px auto;
+    margin-top: 5px;
 }
 
 .container{
@@ -86,15 +117,16 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: -16px;
 }
 
 #main-head{
     background-color: black;
-    padding: 20px;
+    padding: 20px 40px;
     height: 8vh;
     width: 100%;
     position: relative;
-    z-index: 100;
+    align-items: center;
 }
 
 .logo{
@@ -137,7 +169,6 @@ button{
     margin-bottom: 50px 0;
     letter-spacing: 3px;
     padding-top: 30px;
-
 }
 
 .a-m-paragraph{
@@ -151,10 +182,6 @@ button{
     min-height: 100vh;
     width: 100%;
     padding-top: 3px;
-}
-
-ul{
-    padding-left: 14px;
 }
 
 .p-image{
@@ -183,12 +210,8 @@ ul{
     width: 300px;
     background-color: var(--theme-red);
     margin: 10px;
-    transition: all ease .3s;
+    margin-top: 50px;
     box-shadow: 0px 3px 5px var(--theme-red);
-}
-
-.p-card:hover{
-    transform: scale(1.1,1.1);
 }
 
 .c-heading{
@@ -305,19 +328,14 @@ footer{
         flex-direction: column-reverse;
     }
 
-    .logo-wrapper{
-        background-color: var(--theme-red);
-        padding: 8px;
-        border-radius: 15px;
-        box-shadow: 0 3px 5px rgba(10, 10, 10, 0.5);
-        position: absolute;
-        display: flex ;
-        justify-content: center;
-        z-index: 200;
+    .logo{
+        font-size: 12px;
     }
 
-    #main-head li{
-        margin: 100px 0;
+    .flex-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .p-card{
@@ -357,5 +375,31 @@ footer{
     #social-links{
         margin: 0;
         margin-bottom: 80px;
+    }
+
+    #main-head{
+        background-color: black;
+        padding: 20px;
+        height: 8vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .logo-wrapper{
+        background-color: green;
+        padding: 6px;
+        border-radius: 15px;
+        box-shadow: 0 3px 5px rgba(10, 10, 10, 0.5);
+        position: absolute;
+        display: flex ;
+        justify-content: center;
+        margin-top: 6px;
+        top: 7px;
+    }
+
+    .nav-socials{
+        position: absolute;
+        right: 40px;
+        top: 5px;
     }
 }
