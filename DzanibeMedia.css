@@ -4,7 +4,7 @@
   --text-color: rgb(111, 104, 104);
   --border-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   --transition: all 0.3s ease;
-  --theme-red: rgb(14, 112, 157);
+  --theme-red: #00cc6a;
 }
 
 * {
@@ -202,6 +202,7 @@ span {
 .projects-wrapper {
   display: flex;
   justify-content: flex-start;
+  padding-bottom: 50px;
 }
 
 .p-card {
