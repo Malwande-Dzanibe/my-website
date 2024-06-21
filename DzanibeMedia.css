@@ -99,6 +99,15 @@ span {
   margin-left: 30px;
 }
 
+.project-buttons2 {
+  display: flex;
+  width: 100%;
+  margin-top: 3px;
+  justify-content: flex-end;
+  margin-left: 30px;
+  background-color: orange;
+}
+
 .under {
   width: 50px;
   height: 3px;
@@ -192,11 +201,12 @@ span {
   transition: all 120ms ease-out;
 }
 
-.p-title {
+.p-title2 {
   margin-top: 15px;
   text-decoration: none;
   color: black;
   transition: all 120ms ease-out;
+  background-color: purple;
 }
 
 .projects-wrapper {
@@ -205,15 +215,27 @@ span {
   padding-bottom: 50px;
 }
 
-.p-card {
+.second-footer {
+  color: black;
+  padding: 20px 0px;
+  text-decoration: none;
+}
+
+.p-card2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-decoration: none;
   width: 300px;
   background-color: var(--theme-red);
   margin: 10px;
   margin-top: 50px;
   box-shadow: 0px 3px 5px var(--theme-red);
+  transition: all 0.3s ease;
+}
+
+.p-card2:hover {
+  transform: scale(1.05, 1.05);
 }
 
 .c-heading {
