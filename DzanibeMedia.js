@@ -1,9 +1,5 @@
+const footerElement = document.querySelector(".footer");
 
-const footerElement = document.querySelector(".footer")
+const footerYear = new Date().getFullYear();
 
-const footerYear = new Date().getFullYear()
-
-footerElement.innerHTML = `Dzanibe Media &copy; ${footerYear},  All rights reserved`
-
-
-
+footerElement.innerHTML = `Malwande Dzanibe &copy; ${footerYear}`;

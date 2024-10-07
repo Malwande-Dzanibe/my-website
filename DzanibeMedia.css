@@ -4,7 +4,7 @@
   --text-color: rgb(111, 104, 104);
   --border-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   --transition: all 0.3s ease;
-  --theme-red: #00cc6a;
+  --theme-red: #026a81;
 }
 
 * {
@@ -14,11 +14,11 @@
 }
 
 body {
-  background-color: black;
+  background-color: #202124;
   font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
+  font-weight: 600;
   width: 100%;
-  color: rgb(151, 146, 146);
+  color: rgb(216, 213, 213);
 }
 
 .contact {
@@ -54,7 +54,7 @@ body {
 
 .logo-wrapper {
   padding: 6px;
-  background-color: green;
+  background-color: var(--theme-red);
   border-radius: 15px;
   box-shadow: 0 3px 5px rgba(10, 10, 10, 0.5);
   display: flex;
@@ -63,7 +63,7 @@ body {
 
 span {
   color: var(--theme-red);
-  font-weight: bolder;
+  font-weight: 600;
   font-size: 2.1rem;
 }
 
@@ -77,7 +77,7 @@ span {
   margin-right: 5px;
   padding: 5px 10px;
   margin-bottom: 7px;
-  background-color: black;
+  background-color: #202124;
   color: var(--theme-red);
   border: 2px rgb(58, 57, 57) solid;
   font-weight: bold;
@@ -110,7 +110,15 @@ span {
 
 .under {
   width: 50px;
-  height: 3px;
+  height: 1px;
+  background-color: var(--theme-red);
+  margin: 0px auto;
+  margin-top: 5px;
+}
+
+.under2 {
+  width: 100%;
+  height: 1px;
   background-color: var(--theme-red);
   margin: 0px auto;
   margin-top: 5px;
@@ -130,7 +138,7 @@ span {
 }
 
 #main-head {
-  background-color: black;
+  background-color: #202124;
   padding: 20px 40px;
   height: 8vh;
   width: 100%;
@@ -139,7 +147,7 @@ span {
 }
 
 .logo {
-  font-weight: bolder;
+  font-weight: 600;
   margin: 0;
   color: black;
   text-shadow: var(--border-shadow);
@@ -181,11 +189,12 @@ span {
 }
 
 .a-m-paragraph {
-  font-size: 12px;
+  font-size: 10px;
   margin: 30px 0;
   line-height: 1.4;
   word-spacing: 2px;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 #projects {
@@ -196,7 +205,7 @@ span {
 
 .p-image {
   height: 150px;
-  width: 300px;
+  width: 290px;
   box-shadow: var(--border-shadow);
   transition: all 120ms ease-out;
 }
@@ -216,7 +225,7 @@ span {
 }
 
 .second-footer {
-  color: black;
+  color: var(--theme-red);
   padding: 20px 0px;
   text-decoration: none;
 }
@@ -227,11 +236,14 @@ span {
   align-items: center;
   text-decoration: none;
   width: 300px;
-  background-color: var(--theme-red);
+  background-color: #202124;
   margin: 10px;
   margin-top: 50px;
-  box-shadow: 0px 3px 5px var(--theme-red);
   transition: all 0.3s ease;
+  color: rgb(216, 213, 213);
+  border: 1px solid var(--theme-red);
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px;
 }
 
 .p-card2:hover {
@@ -273,7 +285,7 @@ span {
 }
 
 .c-card p {
-  font-weight: bold;
+  font-weight: 100;
   font-size: 0.8rem;
   line-height: 1.2;
   letter-spacing: 1px;
@@ -293,7 +305,8 @@ i {
 }
 
 .footer {
-  margin-left: 5px;
+  display: flex;
+  justify-content: center;
   color: var(--theme-red);
 }
 
@@ -303,7 +316,7 @@ i {
 }
 
 footer {
-  background-color: rgb(13, 13, 13);
+  background-color: #202124;
   color: rgb(88, 86, 86);
   font-size: 11px;
   display: flex;
@@ -312,20 +325,18 @@ footer {
   height: 48vh;
   width: 100%;
   flex-direction: column;
-  padding-bottom: 20px;
   position: relative;
 }
 
 .social-links-wrapper {
   position: absolute;
-  left: 2vw;
-  bottom: 2vh;
+  width: 100%;
 }
 
 #social-links i {
   margin: 5px;
   padding: 0;
-  margin-right: 10px;
+  margin: 30px;
   font-size: 16px;
   color: var(--theme-red);
 }
@@ -336,10 +347,9 @@ footer {
 }
 
 #social-links {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   display: flex;
-  flex-direction: column;
-  margin-top: 50px;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -367,7 +377,7 @@ footer {
   }
 
   footer {
-    background-color: rgb(13, 13, 13);
+    background-color: #202124;
     color: rgb(88, 86, 86);
     font-size: 11px;
     display: flex;
@@ -376,31 +386,26 @@ footer {
     height: 48vh;
     width: 100%;
     flex-direction: column;
-    padding-bottom: 20px;
     position: relative;
   }
 
   .social-links-wrapper {
     position: absolute;
-    top: 2vh;
-    left: 3vw;
-    bottom: 2vh;
   }
 
   #social-links i {
-    margin: 5px;
+    margin: 15px;
     padding: 0;
-    margin-right: 10px;
     font-size: 16px;
   }
 
   #social-links {
     margin: 0;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   #main-head {
-    background-color: black;
+    background-color: #202124;
     padding: 20px;
     height: 8vh;
     width: 100%;
@@ -408,7 +413,7 @@ footer {
   }
 
   .logo-wrapper {
-    background-color: green;
+    background-color: var(--theme-red);
     padding: 6px;
     border-radius: 15px;
     box-shadow: 0 3px 5px rgba(10, 10, 10, 0.5);
