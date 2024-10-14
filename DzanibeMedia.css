@@ -161,6 +161,20 @@ span {
   position: relative;
   background-image: url(./1587717449_image_christopher-gower-m_HRfLhgABo-unsplash.jpg);
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-text {
+  z-index: 100;
+  font-size: 40px;
+}
+
+.hero-loc {
+  z-index: 100;
+  margin-right: 50px;
 }
 
 .hero::after {
@@ -171,7 +185,7 @@ span {
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 #about-me {
