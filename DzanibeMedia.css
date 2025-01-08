@@ -252,6 +252,7 @@ span {
   border-radius: 3px;
   transition: all 0.3s;
   width: 300px;
+  color: #202124;
 }
 
 .source:hover {
